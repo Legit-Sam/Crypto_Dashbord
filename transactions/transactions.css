@@ -1,0 +1,92 @@
+/* General styles */
+body {
+    grid-template-columns: 17rem auto;
+}
+
+.warning {
+    color: orange;
+}
+
+.transactionTable {
+    height: fit-content;
+    margin-top: 6rem;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left; /* Ensure the text aligns to the left */
+}
+
+/* Aligning table to the left */
+.transactionTable-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align table to the left */
+}
+
+.transactionTable th {
+    text-align: left;
+    padding: 0.8rem;
+}
+
+.transactionTable td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.transactionTable tbody tr:nth-child(odd) {
+    background: var(--color-white);
+}
+
+
+
+/* Responsiveness for larger tablets */
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+    .transactionTable thead {
+        display: block; /* Show the table header */
+    }
+
+    .transactionTable thead th {
+        text-align: left;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .transactionTable tbody tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .transactionTable td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .transactionTable td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+        flex-basis: 40%;
+        color: var(--color-text);
+    }
+
+    .transactionTable td:last-child {
+        border-bottom: none;
+    }
+
+    .transactionTable tbody tr:last-child td {
+        border-bottom: none;
+    }
+}

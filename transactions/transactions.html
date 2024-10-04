@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Investment Dashboard</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="transactions.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="/" class="nav__logo">
+                <img src="../images/logo.png" alt="Logo">
+            </a>
+
+            <div class="nav__search">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="nav__profile-wrapper">
+                <button class="nav__theme-btn">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <div class="nav__profile">
+                    <div class="nav__profile-photo">
+                        <img src="../images/profile-1.jpg" alt="profile-1">
+                    </div>
+                    <h5>Nana Addo</h5>
+                    <i class="uil uil-angle-down"></i>
+                </div>
+                <button class="nav__menu-btn">
+                    <i class="uil uil-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <menu class="sidebar">
+        <a href="../index.html">
+            <i class="uil uil-create-dashboard"></i>
+            <h5>Dashboard</h5>
+        </a>
+
+        <a href="#">
+            <i class="uil uil-exchange"></i>
+            <h5>Exchange</h5>
+        </a>
+
+        <a href="../wallet/wallet.html">
+            <i class="uil uil-wallet"></i>
+            <h5>Wallet</h5>
+        </a>
+
+        <a href="/transactions/transactions.html" class="active">
+            <i class="uil uil-transaction"></i>
+            <h5>Transactions</h5>
+        </a>
+
+        <a href="#">
+            <i class="uil uil-chart"></i>
+            <h5>Analytics</h5>
+        </a>
+
+        <a href="#">
+            <i class="uil uil-envelopes"></i>
+            <h5>Messages</h5>
+        </a>
+
+        <a href="#">
+            <i class="uil uil-question-circle"></i>
+            <h5>Help Center</h5>
+        </a>
+
+        <a href="#">
+            <i class="uil uil-setting"></i>
+            <h5>Settings</h5>
+        </a>
+        <button class="sidebar__close-btn">
+            <div class="uil uil-multiply"></div>
+        </button>
+    </menu>
+
+    <!-- Bulkier Table Body with More Rows -->
+    <table class="transactionTable">
+        <thead>
+            <tr>
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Coin</th>
+                <th>Amount</th>
+                <th>Note</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>#47849940</td>
+                <td>2 Nov, 2022</td>
+                <td>Nana Addo</td>
+                <td>John Doe</td>
+                <td>BTC</td>
+                <td>$20,345</td>
+                <td>Part Payment for a car</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849941</td>
+                <td>3 Nov, 2022</td>
+                <td>Nana Addo</td>
+                <td>Jane Smith</td>
+                <td>ETH</td>
+                <td>$10,000</td>
+                <td>Loan Repayment</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849942</td>
+                <td>5 Nov, 2022</td>
+                <td>Mike Tyson</td>
+                <td>John Doe</td>
+                <td>BTC</td>
+                <td>$2,500</td>
+                <td>Service Payment</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <tr>
+                <td>#47849943</td>
+                <td>7 Nov, 2022</td>
+                <td>Samantha Lee</td>
+                <td>Jane Smith</td>
+                <td>USDT</td>
+                <td>$15,000</td>
+                <td>Consultancy Fee</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849944</td>
+                <td>9 Nov, 2022</td>
+                <td>Michael Jordan</td>
+                <td>John Doe</td>
+                <td>BTC</td>
+                <td>$12,000</td>
+                <td>Investment</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849945</td>
+                <td>10 Nov, 2022</td>
+                <td>Jane Smith</td>
+                <td>Nana Addo</td>
+                <td>ETH</td>
+                <td>$30,000</td>
+                <td>House Payment</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <!-- More rows for bulkier table -->
+            <tr>
+                <td>#47849946</td>
+                <td>12 Nov, 2022</td>
+                <td>John Doe</td>
+                <td>Samantha Lee</td>
+                <td>BTC</td>
+                <td>$5,000</td>
+                <td>Property Purchase</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849947</td>
+                <td>14 Nov, 2022</td>
+                <td>Nana Addo</td>
+                <td>John Doe</td>
+                <td>ETH</td>
+                <td>$18,000</td>
+                <td>Freelancing</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849948</td>
+                <td>15 Nov, 2022</td>
+                <td>Jane Smith</td>
+                <td>Michael Jordan</td>
+                <td>BTC</td>
+                <td>$20,000</td>
+                <td>Investment</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <tr>
+                <td>#47849949</td>
+                <td>17 Nov, 2022</td>
+                <td>Samantha Lee</td>
+                <td>John Doe</td>
+                <td>BTC</td>
+                <td>$25,000</td>
+                <td>Property Sale</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849950</td>
+                <td>20 Nov, 2022</td>
+                <td>Michael Jordan</td>
+                <td>Jane Smith</td>
+                <td>ETH</td>
+                <td>$8,000</td>
+                <td>Loan</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849951</td>
+                <td>21 Nov, 2022</td>
+                <td>Nana Addo</td>
+                <td>John Doe</td>
+                <td>BTC</td>
+                <td>$15,500</td>
+                <td>Car Sale</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <tr>
+                <td>#47849952</td>
+                <td>22 Nov, 2022</td>
+                <td>Samantha Lee</td>
+                <td>Michael Jordan</td>
+                <td>USDT</td>
+                <td>$9,000</td>
+                <td>Real Estate Deal</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849953</td>
+                <td>23 Nov, 2022</td>
+                <td>John Doe</td>
+                <td>Nana Addo</td>
+                <td>BTC</td>
+                <td>$12,000</td>
+                <td>Payment for Services</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849954</td>
+                <td>24 Nov, 2022</td>
+                <td>Jane Smith</td>
+                <td>Samantha Lee</td>
+                <td>ETH</td>
+                <td>$10,000</td>
+                <td>Loan Repayment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849955</td>
+                <td>25 Nov, 2022</td>
+                <td>Michael Jordan</td>
+                <td>John Doe</td>
+                <td>USDT</td>
+                <td>$25,000</td>
+                <td>Investment</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <tr>
+                <td>#47849956</td>
+                <td>26 Nov, 2022</td>
+                <td>Samantha Lee</td>
+                <td>Jane Smith</td>
+                <td>BTC</td>
+                <td>$5,000</td>
+                <td>Service Payment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849957</td>
+                <td>27 Nov, 2022</td>
+                <td>Nana Addo</td>
+                <td>Michael Jordan</td>
+                <td>ETH</td>
+                <td>$7,000</td>
+                <td>Freelancing</td>
+                <td class="warning">Pending</td>
+            </tr>
+            <tr>
+                <td>#47849958</td>
+                <td>28 Nov, 2022</td>
+                <td>John Doe</td>
+                <td>Nana Addo</td>
+                <td>BTC</td>
+                <td>$13,500</td>
+                <td>Property Purchase</td>
+                <td class="danger">Declined</td>
+            </tr>
+            <tr>
+                <td>#47849959</td>
+                <td>29 Nov, 2022</td>
+                <td>Jane Smith</td>
+                <td>Samantha Lee</td>
+                <td>ETH</td>
+                <td>$22,000</td>
+                <td>Investment</td>
+                <td class="success">Completed</td>
+            </tr>
+            <tr>
+                <td>#47849960</td>
+                <td>30 Nov, 2022</td>
+                <td>Michael Jordan</td>
+                <td>John Doe</td>
+                <td>USDT</td>
+                <td>$18,000</td>
+                <td>Real Estate Deal</td>
+                <td class="warning">Pending</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="../main.js"></script>
+</body>
+</html>
