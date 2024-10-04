@@ -71,12 +71,17 @@ font-weight: 400;
     padding: 1.5rem;
     border-radius: 1rem;
     background: var(--color-white);
+    transition: var(--transition);
   
 }
 
 .wallet_token-left{
     display: flex;
     gap: 0.7rem
+}
+
+.wallet_token:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1), 0 12px 40px rgba(0, 0, 0, 0.2);
 }
 
 .wallet_token-image{
