@@ -655,6 +655,7 @@ canvas{
 @media screen and (max-width: 600px) {
 nav{
     height: 5rem;
+    width: 100%;
 }
 
 .nav__profile-wrapper h5, .nav__profile-wrapper span{
